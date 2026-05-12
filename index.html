@@ -1,97 +1,226 @@
 <!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP (Inspired)
+	Customized for Yi Jiu Music Culture Studio
+-->
 <html>
 <head>
-    <title>亿玖音乐文化工作室</title>
+    <title>亿玖音乐文化工作室 | Yi Jiu Music Studio</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <!-- 引入谷歌字体提升质感 -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        *{margin:0;padding:0;box-sizing:border-box;font-family:Microsoft YaHei,sans-serif}
-        body{background:#f1f1f1;color:#333}
-        #wrapper{display:flex;min-height:100vh}
-        #header{background:#232933;color:#fff;width:260px;padding:40px 30px;position:fixed;height:100vh}
-        #header .logo{font-size:22px;font-weight:bold;margin-bottom:10px}
-        #header p{color:#aaa}
-        #nav{margin-top:40px}
-        #nav ul{list-style:none}
-        #nav li{margin:15px 0}
-        #nav a{color:#fff;text-decoration:none;font-size:16px}
-        #nav a.active{color:#00D1B2}
-        #main{flex:1;margin-left:260px;padding:60px 40px}
-        .main{background:#fff;border-radius:8px;padding:40px;margin-bottom:30px;box-shadow:0 2px 10px rgba(0,0,0,0.05)}
-        .major{margin-bottom:20px}
-        .spotlight{display:flex;gap:30px;align-items:center}
-        .image img{max-width:200px;border-radius:8px}
-        .features{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
-        .features li{list-style:none;background:#f8f8f8;padding:20px;border-radius:8px}
-        .contact li{list-style:none;margin:10px 0}
-        #footer{text-align:center;padding:20px;color:#888}
+        /* 全局重置与字体优化 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #ffffff;
+            color: #444;
+            line-height: 1.8;
+        }
+        h1, h2, h3 { font-family: 'Playfair Display', serif; color: #222; }
+
+        /* 主容器 */
+        #wrapper { display: flex; min-height: 100vh; }
+
+        /* 左侧边栏 - 模拟 Strata 经典侧边 */
+        #header {
+            width: 35%;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&q=80') center center / cover no-repeat;
+            color: #fff;
+            padding: 5em 3em;
+            position: fixed;
+            height: 100vh;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #header .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.2);
+            margin-bottom: 2em;
+            margin-left: auto;
+        }
+
+        #header h1 { color: #fff; font-size: 1.8em; margin-bottom: 0.5em; }
+        #header p { color: rgba(255,255,255,0.7); font-size: 0.9em; letter-spacing: 1px; }
+
+        /* 导航 */
+        #nav { margin-top: 2em; }
+        #nav ul { list-style: none; }
+        #nav li { margin: 0.5em 0; }
+        #nav a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-size: 0.85em; 
+            text-transform: uppercase; 
+            letter-spacing: 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+        #nav a:hover { opacity: 1; }
+
+        /* 右侧主内容区 */
+        #main {
+            flex: 1;
+            margin-left: 35%;
+            padding: 6em 10% 4em 10%;
+        }
+
+        section { padding-bottom: 4em; border-bottom: 1px solid #eee; margin-bottom: 4em; }
+
+        .major h2 { font-size: 2em; margin-bottom: 1em; position: relative; }
+        .major h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 2px;
+            background: #49bf9d; /* Strata经典的绿色系 */
+            margin-top: 15px;
+        }
+
+        /* 重点亮点：官方背景 */
+        .highlight-box {
+            background: #f9f9f9;
+            border-left: 4px solid #49bf9d;
+            padding: 2em;
+            margin: 2em 0;
+        }
+
+        /* 服务网格 */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            margin-top: 2em;
+        }
+        .features h3 { font-size: 1.1em; margin-bottom: 0.5em; color: #49bf9d; }
+
+        /* 页脚 */
+        #footer {
+            padding: 2em 0;
+            color: #aaa;
+            font-size: 0.8em;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 1100px) {
+            #header { width: 40%; }
+            #main { margin-left: 40%; }
+        }
+        @media (max-width: 900px) {
+            #wrapper { flex-direction: column; }
+            #header { width: 100%; height: auto; position: relative; text-align: center; padding: 4em 2em; }
+            #header .avatar { margin: 0 auto 2em auto; }
+            #main { margin-left: 0; padding: 3em 10%; }
+            .features { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <div id="wrapper">
+        <!-- 左侧边栏 -->
         <header id="header">
-            <div class="logo"><strong>亿玖音乐文化工作室</strong></div>
-            <p>音乐培训 · 艺考指导 · 音乐制作 · 文化交流</p>
+            <img src="https://picsum.photos/200" alt="Logo" class="avatar" />
+            <h1>亿玖音乐文化工作室<br />Yi Jiu Music</h1>
+            <p>专业音乐留学 · 国际院校直连<br />Professional Music Education Consultancy</p>
+            
             <nav id="nav">
                 <ul>
-                    <li><a href="#intro" class="active">关于我们</a></li>
-                    <li><a href="#service">核心服务</a></li>
-                    <li><a href="#school">教学环境</a></li>
-                    <li><a href="#case">成功案例</a></li>
-                    <li><a href="#contact">联系我们</a></li>
+                    <li><a href="#intro">About Us / 关于</a></li>
+                    <li><a href="#connection">Connections / 合作</a></li>
+                    <li><a href="#services">Services / 服务</a></li>
+                    <li><a href="#contact">Contact / 联系</a></li>
                 </ul>
             </nav>
         </header>
 
+        <!-- 右侧主内容区 -->
         <div id="main">
-            <section id="intro" class="main">
-                <div class="spotlight">
-                    <div class="content">
-                        <h2>关于亿玖音乐文化工作室</h2>
-                        <p>亿玖音乐文化工作室专注音乐教育、音乐制作、艺考培训、乐器教学与文化交流。我们拥有专业师资团队，用心打造高品质音乐教学服务，让每一位学员感受音乐的魅力，实现音乐梦想。</p>
+            
+            <!-- 关于我们 -->
+            <section id="intro">
+                <header class="major">
+                    <h2>About Us / 关于我们</h2>
+                </header>
+                <p><strong>Yi Jiu Music Culture Studio</strong> specializes in providing elite music education consultancy. We bridge the gap between talented Chinese musicians and world-class conservatories.</p>
+                <p>亿玖音乐文化工作室深耕音乐留学领域，致力于为每一位怀揣梦想的学子提供最专业的申请规划、作品集指导及文书定制服务。我们不仅是中介，更是学生音乐道路上的专业引路人。</p>
+            </section>
+
+            <!-- 核心优势：院校建联 -->
+            <section id="connection">
+                <header class="major">
+                    <h2>Global Connections / 合作与建联</h2>
+                </header>
+                <div class="highlight-box">
+                    <p><strong>Official Liaison with Royal Schools of Music (UK)</strong></p>
+                    <p>我们已与<strong>英国皇家系列音乐学院</strong>建立稳固联络，合作对象涵盖在职教授及官方招生办公室。通过官方渠道，为学生提供最权威的一手招生动态与面试建议。</p>
+                </div>
+                <p>Our network covers prestigious institutions including The Juilliard School, Berklee College of Music, and top-tier conservatories across Europe and Asia.</p>
+            </section>
+
+            <!-- 核心服务 -->
+            <section id="services">
+                <header class="major">
+                    <h2>Our Services / 核心服务</h2>
+                </header>
+                <div class="features">
+                    <div>
+                        <h3>Academic Planning / 院校规划</h3>
+                        <p>Tailored application strategies based on individual profiles.<br />根据学生背景量身定制专属申请方案。</p>
                     </div>
-                    <div class="image">
-                        <img src="https://picsum.photos/600/400?random=1" alt="音乐工作室">
+                    <div>
+                        <h3>Portfolio Guidance / 作品集指导</h3>
+                        <p>One-on-one coaching by professional mentors.<br />由专业导师提供一对一作品集录制与优化指导。</p>
+                    </div>
+                    <div>
+                        <h3>Application Support / 文书定制</h3>
+                        <p>Professional polishing for Personal Statements and CVs.<br />个人陈述、推荐信等全套文书的专业润色。</p>
+                    </div>
+                    <div>
+                        <h3>Pre-departure / 行前指导</h3>
+                        <p>Comprehensive visa and life orientation for overseas study.<br />全流程签证办理及海外生活/学业衔接指导。</p>
                     </div>
                 </div>
             </section>
 
-            <section id="service" class="main">
-                <h2>核心服务</h2>
-                <ul class="features">
-                    <li><h3>声乐教学</h3><p>美声、民族、流行唱法专业指导</p></li>
-                    <li><h3>乐器培训</h3><p>钢琴、吉他、古筝、小提琴等</p></li>
-                    <li><h3>音乐制作</h3><p>编曲、录音、混音、后期制作</p></li>
-                    <li><h3>艺考指导</h3><p>音乐艺考集训、专业院校报考</p></li>
-                </ul>
-            </section>
-
-            <section id="school" class="main">
-                <h2>教学环境</h2>
-                <p>专业录音棚、独立琴房、多媒体教室、舒适休息区，为学员提供最优质的学习体验。</p>
-                <div class="image main">
-                    <img src="https://picsum.photos/800/400?random=2" alt="教学环境">
+            <!-- 联系我们 -->
+            <section id="contact">
+                <header class="major">
+                    <h2>Get In Touch / 联系我们</h2>
+                </header>
+                <p>如果您是海外院校代表或有合作意向，欢迎通过以下方式与我们取得联系：</p>
+                <div style="margin-top: 2em;">
+                    <p>📧 <strong>Email:</strong> office@yijiumusic.com</p>
+                    <p>📱 <strong>WeChat:</strong> YIJIUMUSIC_OFFICIAL</p>
+                    <p>📍 <strong>Office:</strong> Beijing / Shanghai, China</p>
                 </div>
             </section>
 
-            <section id="case" class="main">
-                <h2>成功案例</h2>
-                <p>多年教学经验，大量学员成功考入国内外音乐院校，多名学员荣获各类音乐比赛奖项，口碑值得信赖。</p>
-            </section>
+            <!-- 页脚 -->
+            <footer id="footer">
+                <p class="copyright">&copy; Yi Jiu Music Culture Studio. All rights reserved. <br />Powered by GitHub Pages.</p>
+            </footer>
 
-            <section id="contact" class="main">
-                <h2>联系我们</h2>
-                <ul class="contact">
-                    <li>📩 邮箱：yi-jiu-music@163.com</li>
-                    <li>📞 电话：138 0000 0000</li>
-                    <li>📍 地址：XX市XX区XX路XX号</li>
-                </ul>
-            </section>
         </div>
-
-        <footer id="footer">
-            © 亿玖音乐文化工作室 版权所有
-        </footer>
     </div>
+
+    <!-- 简单的平滑滚动效果 -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
