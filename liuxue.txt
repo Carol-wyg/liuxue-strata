@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>海外留学咨询服务中心</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/css/main.min.css" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/css/noscript.min.css" /></noscript>
+</head>
+<body class="is-preload">
+
+<div id="wrapper">
+
+    <header id="header">
+        <a href="#" class="logo"><strong>海外留学一站式服务</strong></a>
+        <p>名校申请 · 文书定制 · 签证办理 · 境外安置</p>
+    </header>
+
+    <nav id="nav">
+        <ul>
+            <li><a href="#intro" class="active">机构简介</a></li>
+            <li><a href="#school">合作海外院校</a></li>
+            <li><a href="#service">全程申请服务</a></li>
+            <li><a href="#case">成功留学案例</a></li>
+            <li><a href="#contact">联系咨询我们</a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+
+        <section id="intro" class="main">
+            <div class="spotlight">
+                <div class="content">
+                    <header class="major">
+                        <h2>关于我们</h2>
+                    </header>
+                    <p>专注全球多国留学申请，深耕英美澳加、新加坡、香港、欧洲多国名校留学规划。
+提供个性化背景提升、专业择校方案、留学文书撰写润色、签证全程代办、行前指导及境外后续服务。
+多年资深留学顾问团队，超高录取通过率，用心护航每一位学子海外求学之路。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="school" class="main">
+            <header class="major">
+                <h2>全球合作院校</h2>
+            </header>
+            <p>英国顶尖院校、美国综合大学、澳洲八大名校、新西兰公立院校、港澳名校、东南亚优质院校、欧洲多国知名公立私立大学。
+正规院校合作，录取有保障，院校资质齐全，海外教育部认可学历。</p>
+        </section>
+
+        <section id="service" class="main special">
+            <header class="major">
+                <h2一站式留学服务</h2>
+            </header>
+            <ul class="features">
+                <li>
+                    <h3>留学规划择校</h3>
+                    <p>根据学历背景定制专属升学方案</p>
+                </li>
+                <li>
+                    <h3>文书简历润色</h3>
+                    <p>PS个人陈述、推荐信全套英文文书</p>
+                </li>
+                <li>
+                    <h3>签证材料办理</h3>
+                    <p>全程协助，签证高通过率</p>
+                </li>
+                <li>
+                    <h3>境外住宿接机</h3>
+                    <p>海外住宿安排、落地接送服务</p>
+                </li>
+            </ul>
+        </section>
+
+        <section id="case" class="main">
+            <header class="major">
+                <h2>历年成功录取案例</h2>
+            </header>
+            <p>海量本科、硕士专升硕、本升硕留学成功案例，低分逆袭名校、跨专业申请、无语言申请、预科桥梁课程一站式录取。
+真实院校offer可查，口碑靠谱，长期稳定服务海外留学生。</p>
+        </section>
+
+        <section id="contact" class="main">
+            <header class="major">
+                <h2>在线咨询联系</h2>
+            </header>
+            <ul class="contact">
+                <li class="icon solid fa-envelope">your@email.com</li>
+                <li class="icon solid fa-phone">咨询热线：138XXXXXXX</li>
+                <li class="icon solid fa-map-marker">全国线上咨询 · 一对一专属顾问</li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer id="footer">
+        <p class="copyright">© 海外留学咨询中心 版权所有</p>
+    </footer>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/js/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/js/jquery.scrollex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/js/jquery.scrolly.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/js/browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/js/breakpoints.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/js/util.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5up-strata/3.0.0/js/main.min.js"></script>
+
+</body>
+</html>
